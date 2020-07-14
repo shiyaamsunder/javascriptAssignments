@@ -1,0 +1,64 @@
+Question 1:
+Explore and explain the various methods in console function
+
+Answer: 
+  1.  console.log()     - Outputs the message to the developer console.
+  2.  console.warn()    - Outputs a warning message to the developer console.
+  3.  console.clear()   - Clears the console.
+  4.  console.error()   - Outputs an error to the console.
+  5.  console.table()   - Displays the given data in a tabular form.
+  6.  console.info()    - Outputs an information to the console.
+  7.  console.time()    - Starts an timer.
+  8.  console.timeEnd() - Ends the timer.
+  9.  console.count()   - Logs the number of times that this particular call to count() has been called.
+  10. console.trace()   - Outputs a stack trace to the console.
+  
+
+Question 2:
+Write the difference between var, let and const with code examples.
+
+Answer: 
+  Both 'var' and 'const' are used for variable declaration, but the main difference is that 'var' is function scoped that is,
+  it is available throughout the program and 'let' is block scoped which means it is available only for a particular block of 
+  code like an function. The 'const' variable is used to declare variables that don't change during the whole execution of the
+  code, in other words 'a constant value' and we can't change the values once it's declared.
+
+Example Code:
+      var name = 'John';
+      var age = 25;
+
+      console.log(name)
+      console.log(age)
+
+      const PI = 3.14;
+      console.log(PI);
+
+      {
+        let job = 'Pilot';
+        console.log(job)
+      }
+
+      //Throws an error because 'job' is outside of the scope.
+      console.log(job)
+
+      //Changing the values and logging them to the console.
+      name= 'Cooper'
+      age= 19;
+      console.log(name)
+      console.log(age)
+
+      //Throws an error because we cant change 'const' values once it's declared.
+      PI = 3.1421;
+      console.log(PI)
+
+
+Question 3:
+Write a brief intro on available data types in JS.
+
+Answer:
+  Datatypes in JS:
+    1. String - contains a string of characters enclosed in double or single quotes.
+    2. Number - a number that can be float or int.
+    3. Boolean - an Boolean value either True or False.
+    4. Array - an list of items inside square brackets separated by commas.
+    5. Object - written as name value pairs inside curly braces.
