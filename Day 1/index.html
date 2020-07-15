@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="" />
+    <meta name="viewport" content="width=, initial-scale=" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <title>JS Assignment Day 1</title>
+
+    <style>
+                body {
+            background-color: white;
+            font-family: Poppins;
+
+          }
+          #head{
+            font-family: Sofia;
+          }
+      table, th, td {
+                  border: 1px solid black;
+                  border-radius: 5px;
+                }
+
+              .q1{
+                  background-color: #ff5b4f;
+                  padding: 10px;
+                  border-radius: 10px;
+                  margin-top: 10px;
+                }
+              .table{
+                background-color:#fff1f0;
+                border-radius: 10px
+              }
+              .q2{
+                  background-color: #8fffad;
+                  padding: 10px;
+                  border-radius: 10px;
+                  margin-top: 10px;
+                }
+
+                #code{
+                  background-color: #73c5ff;
+                  padding: 10px;
+                  border-radius:20px
+
+                }
+
+                .q3{
+                  background-color: #d36bff;
+                  padding: 10px;
+                  border-radius: 10px;
+                  margin-top: 10px;
+                }
+
+                #ans3{
+                  background-color: #d5b8ff;
+                  padding: 10px;
+                  border-radius: 10px;
+                }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="q1">
+        <h1 id="head">JS Essentials - Assignment Day 1</h1>
+
+        <h4>
+          Question 1: Explore and explain the various methods in console
+          function.
+        </h4>
+        <b>Answer:</b>
+        <div class="table">
+          <table style="width:100%">
+            <tr>
+              <th>Console Function</th>
+              <th>Use</th>
+            </tr>
+
+            <tr>
+              <td>console.log()</td>
+              <td>Outputs the message to the developer console.</td>
+            </tr>
+
+            <tr>
+              <td>console.warn()</td>
+              <td>Outputs a warning message to the developer console.</td>
+            </tr>
+
+            <tr>
+              <td>console.clear()</td>
+              <td>Clears the console.</td>
+            </tr>
+
+            <tr>
+              <td>console.error()</td>
+              <td>Outputs an error to the console.</td>
+            </tr>
+
+            <tr>
+              <td>console.table()</td>
+              <td>Displays the given data in a tabular form.</td>
+            </tr>
+
+            <tr>
+              <td>console.info()</td>
+              <td>Outputs an information to the console.</td>
+            </tr>
+
+            <tr>
+              <td>console.time()</td>
+              <td>Starts an timer.</td>
+            </tr>
+
+            <tr>
+              <td>console.timeEnd()</td>
+              <td>Ends the timer.</td>
+            </tr>
+
+            <tr>
+              <td>console.count()</td>
+              <td>Logs the number of times that count() has been called.</td>
+            </tr>
+
+            <tr>
+              <td>console.trace()</td>
+              <td>Outputs a stack trace to the console.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="q2">
+        <h4>
+          Question 2: Write the difference between var, let and const with code
+          examples.
+        </h4>
+
+        <b>Answer:</b>
+
+        <p>
+          Both 'var' and 'const' are used for variable declaration, but the main
+          difference is that 'var' is function scoped that is, it is available
+          throughout the program and 'let' is block scoped which means it is
+          available only for a particular block of code like an function. The
+          'const' variable is used to declare variables that don't change during
+          the whole execution of the code, in other words 'a constant value' and
+          we can't change the values once it's declared.
+        </p>
+
+        <div id="code">
+          <figure>
+            <figcaption>Example Code:</figcaption>
+            <pre>
+              <code>
+      var name = 'John';
+      var age = 25;
+
+      console.log(name)
+      console.log(age)
+
+      const PI = 3.14;
+      console.log(PI);
+
+      {
+        let job = 'Pilot';
+        console.log(job)
+      }
+
+      //Throws an error because 'job' is outside of the scope.
+      console.log(job)
+
+      //Changing the values and logging them to the console.
+      name= 'Cooper'
+      age= 19;
+      console.log(name)
+      console.log(age)
+
+      //Throws an error because we cant change 'const' values 
+      once it's declared.
+      PI = 3.1421;
+      console.log(PI)
+              </code>
+            </pre>
+          </figure>
+        </div>
+      </div>
+
+      <div class="q3">
+        <h4>Question 3: Write a brief intro on available data types in JS.</h4>
+
+        <div id="ans3">
+          <b>Answer:</b>
+          <ol>
+            <li>
+              String - contains a string of characters enclosed in double or
+              single quotes.
+            </li>
+            <li>Number - a number that can be float or int.</li>
+            <li>Boolean - an Boolean value either True or False.</li>
+            <li>
+              Array - an list of items inside square brackets separated by
+              commas.
+            </li>
+            <li>Object - written as name value pairs inside curly braces.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
