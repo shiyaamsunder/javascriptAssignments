@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="" />
+    <meta name="viewport" content="width=, initial-scale=" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <title>JS Essentials Assignment</title>
+
+    <style>
+          body {
+        background: white;
+        color: #323232;
+        font-family: Poppins;
+
+      }
+
+          #head{
+        text-align: center;
+        font-family: Sofia;
+      }
+          table, th, td {
+                  border: 1px solid black;
+                  border-radius: 5px;
+                }
+          .q1{
+                  background-color: #ff5b4f;
+                  padding: 10px;
+                  border-radius: 10px;
+                  margin-top: 10px;
+                }
+          .table{
+                background-color:#fff1f0;
+                border-radius: 10px
+              }
+          .q2{
+                  background-color: #8fffad;
+                  padding: 10px;
+                  border-radius: 10px;
+                  margin-top: 10px;
+                }
+          .q3{
+                  background-color: #d36bff;
+                  padding: 10px;
+                  border-radius: 10px;
+                  margin-top: 10px;
+                }
+      #btndiv{
+        text-align: center;
+
+      }
+
+      #btn{
+         border-radius: 10px;
+         background-color: #a069ff;
+         padding: 5px;
+         font-family: Poppins;
+
+      }
+    </style>
+
+    <script src="script.js"></script>
+
+    <script>
+            function promptFunc () {
+        let userInput = prompt('Please Enter your name.')
+        console.log(userInput)
+
+      }
+
+      function drinkFunc () {
+        let age = document.getElementById('age').value;
+        if (age != ''){
+          if (age >=21 ){
+            console.log('Can Drink')
+          }else{
+            console.log("Cannot Drink")
+          }
+        }else{
+          alert('Enter age!')
+        }
+         
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="body">
+      <div class="q1">
+        <h1 id="head">JS Assignment Day 2</h1>
+        <h3>
+          Question 1: Write a JS code which takes an input from the user and
+          logs it in the console.
+        </h3>
+
+        <div id="btndiv">
+          <button id="btn" type="button" , onclick="promptFunc()">
+            Click to show Prompt
+          </button>
+        </div>
+      </div>
+
+      <div class="q2">
+        <h3>Question 2: Explain the remaining methods in Strings and Arrays</h3>
+        <h4>Answer:</h4>
+
+        <div class="strMethods">
+          <h3 id="strMethodsHead">String Methods:</h3>
+          <table class="table">
+            <tr>
+              <th>Method Name</th>
+              <th>Function</th>
+            </tr>
+
+            <tr>
+              <td>lastIndexOf()</td>
+              <td>
+                Returns the position of the last found occurrence of a specified
+                value in a string
+              </td>
+            </tr>
+            <tr>
+              <td>slice()</td>
+              <td>Extracts a part of a string and returns a new string</td>
+            </tr>
+            <tr>
+              <td>substr()</td>
+              <td>
+                Extracts the characters from a string, beginning at a specified
+                start position, and through the specified number of character
+              </td>
+            </tr>
+
+            <tr>
+              <td>substring()</td>
+              <td>
+                Extracts the characters from a string, between two specified
+                indices
+              </td>
+            </tr>
+            <tr>
+              <td>trim()</td>
+              <td>Removes whitespace from both ends of a string</td>
+            </tr>
+
+            <tr>
+              <td>match()</td>
+              <td>
+                Searches a string for a match against a regular expression, and
+                returns the matches
+              </td>
+            </tr>
+
+            <tr>
+              <td>repeat()</td>
+              <td>
+                Returns a new string with a specified number of copies of an
+                existing string
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="arrayMethods">
+          <h3 id="arrayMethodsHead">Array Methods</h3>
+          <table class="table">
+            <tr>
+              <th>Method Name</th>
+              <th>Function</th>
+            </tr>
+
+            <tr>
+              <td>copyWithin()</td>
+              <td>
+                Copies array elements within the array, to and from specified
+                positions
+              </td>
+            </tr>
+            <tr>
+              <td>find()</td>
+              <td>
+                Returns the value of the first element in an array that pass a
+                test
+              </td>
+            </tr>
+            <tr>
+              <td>indexOf()</td>
+              <td>Search the array for an element and returns its position</td>
+            </tr>
+            <tr>
+              <td>forEach()</td>
+              <td>Calls a function for each array element</td>
+            </tr>
+            <tr>
+              <td>findIndex()</td>
+              <td>
+                Returns the index of the first element in an array that pass a
+                test
+              </td>
+            </tr>
+            <tr>
+              <td>join()</td>
+              <td>Joins all elements of an array into a string</td>
+            </tr>
+            <tr>
+              <td>map()</td>
+              <td>
+                Creates a new array with the result of calling a function for
+                each array element
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="q3">
+        <h2>Optional Assignment</h2>
+        <h3>
+          Question 3: Ask the user if he is 21 or above and log the value "Can
+          Drink" or log the value "Cannot Drink" if he's below 21.
+        </h3>
+        <label for="age" , id="inputLabel">Enter Your Age:</label>
+        <input type="number" id="age" />
+        <button type="submit" id="btn" onclick="drinkFunc()">Click Me</button>
+      </div>
+    </div>
+  </body>
+</html>
