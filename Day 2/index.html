@@ -65,8 +65,6 @@
       }
     </style>
 
-    <script src="script.js"></script>
-
     <script>
             function promptFunc () {
         let userInput = prompt('Please Enter your name.')
@@ -76,17 +74,7 @@
 
       function drinkFunc () {
         let age = document.getElementById('age').value;
-        if (age != ''){
-          if (age >=21 ){
-            console.log('Can Drink')
-          }else{
-            console.log("Cannot Drink")
-          }
-        }else{
-          alert('Enter age!')
-        }
-         
-
+        (age != '' ? console.log(age>=21 ? 'Can Drink': 'Cannot Drink') : alert('Enter age'))
       }
     </script>
   </head>
