@@ -1,0 +1,84 @@
+body {
+    background-color: antiquewhite;
+    font-family: Poppins;
+}
+
+#heading {
+    text-align: center;
+    margin: 2px;
+    background-color: rgb(211, 98, 192);
+    border-radius: 20px;
+    font-family: Sofia;
+  }
+
+  .wholePage{
+      background-color: rgb(205, 206, 199);
+      padding: 20px;
+      border-radius: 20px;
+  }
+
+  .question1 {
+    background-color: rgba(250, 54, 54, 0.651);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .question2 {
+    background-color: rgba(17, 138, 13, 0.651);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .question3 {
+    background-color: rgba(255, 220, 19, 0.651);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  #code3{
+      background-color: aquamarine;
+      border-radius: 10px;
+  }
+
+  #code8{
+    background-color: rgb(255, 127, 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+  .question4 {
+    background-color: rgba(18, 153, 231, 0.753);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .question5 {
+    background-color: rgba(243, 26, 196, 0.74);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .question6 {
+    background-color: rgba(255, 130, 178, 0.651);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .question7 {
+    background-color: rgba(255, 112, 16, 0.87);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .question8 {
+    background-color: rgba(64, 216, 208, 0.651);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
