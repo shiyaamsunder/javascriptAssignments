@@ -1,0 +1,46 @@
+#ques1array, #odd, #cube{
+    word-wrap: break-word;
+}
+
+.ques1{
+    background-color: rgb(255, 255, 47);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+#ques1array{
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#odd{
+    background-color: rgb(97, 255, 92);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#cube{
+    background-color: rgb(187, 127, 255);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.ques2{
+    background-color: #f8904a;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.ques3{
+    background-color: rgb(83, 250, 83);
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+}

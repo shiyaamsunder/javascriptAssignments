@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ques1.js"></script>
+    <script src="ques2.js"></script>
+    <script src="ques3.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1 id="heading">Day 5 Assignment</h1>
+    </div>
+
+    <div class="ques1">
+        <h3>Question 1</h3>
+        <div>
+            <ol>
+                <li>Take a positive number from user.</li>
+                <li>Make an array of numbers till the numbers given by the user.</li>
+                <li>Use Higher Order Function to filter the odd numbers.</li>
+                <li>Generate an array of the cubes of the filtered ones.</li>
+            </ol>
+        </div>
+        <br>
+        <div class="ans1">
+
+            Enter a positive number
+            <input id="ques1input" type="text">
+            <br><br>
+            <div class="q1button1">
+                <button type="submit" onclick="checkNum()">
+                    Create an array
+                </button>
+            </div>
+            <p id="ques1array">
+                The array will show up here
+            </p>
+
+            <p>To show the Odd numbers and Cubes of those Odd numbers click the button below</p>
+        </div>
+        <div class="q2button2">
+            <button type="submit" onclick="showOddandCube(arr)">
+                Click Here
+            </button>
+
+        </div>
+        <p id="odd">
+            The odd numbers will show up here
+        </p>
+
+        <p id="cube">
+            The cube of those odd numbers will show up here
+        </p>
+    </div>
+
+    <div class="ques2">
+        <h3>Question 2</h3>
+        <ol>
+            <li>Create a Class User with properties as name, age & email. He can login and logout.</li>
+            <li>
+                Create another class Moderator which has all the features of User, plus additional functionality to
+                Add
+                coins and remove coins.</li>
+            <li> Create one more class Admin which has all the features of Moderator plus additional features like
+                add a
+                Course and delete a particular course for a user.</li>
+
+        </ol>
+
+        <p>Please navigate to the console for the results</p>
+
+
+
+    </div>
+
+    <div class="ques3">
+        <h3>
+            Question 3
+        </h3>
+
+        <p>
+            Using promises/async await/fetch get the random todos from the json placeholder api. And log all the
+            completed todos to the console.
+
+        </p>
+        <h4>Answer 4
+        </h4>
+
+        <p>Please click the button first and head to the console for the data</p>
+
+        <button id="fetchapiButton" onclick="fetchCompletedTodos()">Fetch Data</button>
+
+
+        <p id='fetchapi'>
+
+        </p>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
